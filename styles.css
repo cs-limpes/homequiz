@@ -1,0 +1,18 @@
+body {
+      width: 50%;
+      margin: auto 25%;
+}
+
+h1 {
+      text-align: center;
+}
+
+
+#quiz-container {
+      margin: 10% auto;
+      text-align: center;
+}
+
+#quiz-container button{
+      margin: 0 1rem;
+}
