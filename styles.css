@@ -1,17 +1,80 @@
+/* Blue: #71afbe */
+
+
 body {
       width: 50%;
       margin: auto 25%;
+      border: 15px solid #71afbe;
+      color: #4d5959;
+      font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+      body {
+            width: 93%;
+            margin: 0 auto;
+      }
+}
+
+
+.logo {
+      width: 40%;
+      margin: 3rem 30% 0 30%;
+
 }
 
 h1 {
       text-align: center;
 }
 
+.intro {
+      margin: 2rem 10%;
+}
+
+.radio-option {
+      display: flex;
+      align-items: flex-start; 
+      margin-bottom: 10px; 
+      width: 90%;
+      font-size: 1.2rem;
+  }
+  
+  .radio-option input[type="radio"] {
+      margin-right: 10px; 
+  }
 
 #quiz-container {
-      margin: 10% auto;
+      margin: 10% 10%;
+}
+
+.button-container {
+      display: flex;
+      justify-content: space-between; 
+      align-items: center; 
+      padding: 10px 0; 
+  }
+  
+ 
+  .button-container button {
+      flex: 1; 
+      margin: 0 5px; 
+      font-size: 1.2rem;
+  }
+
+  @media (max-width: 480px) { 
+      .button-container {
+          flex-direction: column; 
+      }
+  
+      .button-container button {
+          margin: 5px 0; 
+      }
+  }
+
+#quiz-container h2 {
       text-align: center;
 }
+
 
 #quiz-container button{
       margin: 0 1rem;
