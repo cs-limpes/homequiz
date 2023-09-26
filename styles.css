@@ -79,3 +79,12 @@ h1 {
 #quiz-container button{
       margin: 0 1rem;
 }
+
+#user-info {
+      text-align: center;
+      margin-bottom: 5rem;
+}
+
+#user-info input {
+      font-size: 1.2rem;
+}
