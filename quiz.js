@@ -241,9 +241,14 @@ function submitQuiz() {
         result = buildOnYourLotResult;
     };
 
-    // Display the result
-    document.getElementById('result-text').innerHTML = `Hello ${userName}, your result is: ${result}`;
-    document.getElementById('result-container').style.display = 'block';
+     // Hide the intro paragraph, name/email form, and quiz container
+     document.querySelector('.intro').style.display = 'none';
+     document.getElementById('user-info').style.display = 'none';
+     document.getElementById('quiz-container').style.display = 'none';
+ 
+     // Display the result
+     document.getElementById('result-text').innerHTML = `Hello ${userName}, your result is: ${result}`;
+     document.getElementById('result-container').style.display = 'block';
 
     // Prepare data to send to the server
     const data = {
