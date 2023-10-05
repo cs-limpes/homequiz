@@ -1,7 +1,9 @@
 // quiz.js
 
 let currentQuestionIndex = 0;
-let scores = [0, 0, 0, 0]; //four scores because there are 4 possible results
+let scores = [0, 0, 0, 0];
+let userSelections = []; // To track user selections
+
 
 const questions = [
     { //question 1
@@ -67,13 +69,12 @@ function renderQuestion() {
     let html = `<h2>${question.question}</h2>`;
     
     question.answers.forEach((answer, index) => {
-        let isChecked = index === scores[currentQuestionIndex] ? "checked" : "";
+        const isChecked = userSelections[currentQuestionIndex] === index ? "checked" : ""; // Check if the user has made a selection
         html += `<div class="radio-option">`; 
         html += `<input type="radio" name="answer" value="${index}" id="answer${index}" ${isChecked}>`;
         html += `<label for="answer${index}">${answer}</label>`;
         html += `</div>`; 
     });
-    
     
     html += `<div class="button-container">`; //start button container
     if (currentQuestionIndex > 0) {
@@ -81,12 +82,12 @@ function renderQuestion() {
     }
     html += `<button onclick="selectAnswer()">Next</button>`;
     
-   
     html += `</div>`; // End button container
     
-
     document.getElementById('quiz-container').innerHTML = html;
 }
+
+
 
 
 function selectAnswer() {
@@ -98,6 +99,9 @@ function selectAnswer() {
     const answerIndex = parseInt(selectedRadio.value);
     scores[currentQuestionIndex] = answerIndex;
     
+    // Store the user's selection
+    userSelections[currentQuestionIndex] = answerIndex;
+
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         renderQuestion();
@@ -107,6 +111,7 @@ function selectAnswer() {
         document.getElementById('user-info').style.display = 'block';
     }
 }
+
 
 
 function previousQuestion() {
@@ -133,7 +138,9 @@ function submitQuiz() {
         result = "On Your Lot";
     };
     
-    alert(`Hello ${document.getElementById('name').value}, your result is: ${result}`);
+    document.getElementById('result-text').innerText = `Hello ${name}, your result is: ${result}`;
+    document.getElementById('result-display').style.display = 'block';
+
 
     const email = document.getElementById('email').value;
     const name = document.getElementById('name').value;

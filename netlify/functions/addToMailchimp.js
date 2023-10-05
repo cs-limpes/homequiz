@@ -29,6 +29,18 @@ exports.handler = async function(event, context) {
             }
         });
 
+        const memberId = response.data.id;  // Get the member ID from the response
+        const tagsUrl = `${url}${memberId}/tags`;
+
+        await axios.post(tagsUrl, {
+            tags: [{ name: result, status: "active" }]
+        }, {
+            headers: {
+                Authorization: `apikey ${apiKey}`,
+                'Content-Type': 'application/json'
+            }
+        });
+
         // Handle segment logic based on the 'result' here if needed
 
         return {
