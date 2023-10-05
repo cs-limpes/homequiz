@@ -44,12 +44,12 @@ exports.handler = async function(event, context) {
 
         return {
             statusCode: 200,
-            body: JSON.stringify({ message: "Added to Mailchimp successfully!" })
+           // body: JSON.stringify({ message: "Added to Mailchimp successfully!" })
         };
     } catch (error) {
         return {
             statusCode: error.response ? error.response.status : 500,
-            body: JSON.stringify({ message: error.message })
+            // body: JSON.stringify({ message: error.message })
         };
     }
 };
