@@ -29,6 +29,7 @@ h1 {
 
 .intro {
       margin: 2rem 10%;
+      display: block;
 }
 
 .radio-option {
