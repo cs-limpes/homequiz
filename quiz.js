@@ -122,10 +122,18 @@ function previousQuestion() {
 }
 
 function submitQuiz() {
-    // send user info to CRM and results to user by email
-    // calculate result and alert it
-    const totalScore = scores.map((answerIndex, questionIndex) => questions[questionIndex].score[answerIndex]).reduce((a, b) => a + b, 0);
+    // Get user input
+    const email = document.getElementById('email').value;
+    const userName = document.getElementById('name').value; // Declare 'userName' here
 
+    // Check if required fields are filled
+    if (!email || !userName) {
+        alert("Please provide your name and email.");
+        return;
+    }
+
+    // Calculate total score and determine result
+    const totalScore = scores.map((answerIndex, questionIndex) => questions[questionIndex].score[answerIndex]).reduce((a, b) => a + b, 0);
     let result = "Unknown"; // Default result
 
     if (totalScore <= 4) {
@@ -137,25 +145,19 @@ function submitQuiz() {
     } else {
         result = "On Your Lot";
     };
-    
-    document.getElementById('result-text').innerText = `Hello ${name}, your result is: ${result}`;
+
+    // Display the result
+    document.getElementById('result-text').innerText = `Hello ${userName}, your result is: ${result}`;
     document.getElementById('result-display').style.display = 'block';
 
-
-    const email = document.getElementById('email').value;
-    const name = document.getElementById('name').value;
-
-    if (!email || !name) {
-        alert("Please provide your name and email.");
-        return;
-    }
-
+    // Prepare data to send to the server
     const data = {
         email: email,
-        name: name,
+        name: userName, // Use 'userName' here
         result: result
     };
 
+    // Send data to the server via fetch
     fetch('/.netlify/functions/addToMailchimp', {
         method: 'POST',
         headers: {
@@ -172,9 +174,9 @@ function submitQuiz() {
     .catch(error => {
         console.error("Error:", error);
     });
-
-
 }
+
+
 
 function resetQuiz() {
     console.log("resetting...")
