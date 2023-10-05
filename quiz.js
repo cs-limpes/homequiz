@@ -134,6 +134,39 @@ function submitQuiz() {
     };
     
     alert(`Hello ${document.getElementById('name').value}, your result is: ${result}`);
+
+    const email = document.getElementById('email').value;
+    const name = document.getElementById('name').value;
+
+    if (!email || !name) {
+        alert("Please provide your name and email.");
+        return;
+    }
+
+    const data = {
+        email: email,
+        name: name,
+        result: result
+    };
+
+    fetch('/.netlify/functions/addToMailchimp', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.message) {
+            alert(data.message);
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    });
+
+
 }
 
 function resetQuiz() {
