@@ -242,8 +242,8 @@ function submitQuiz() {
     };
 
     // Display the result
-    document.getElementById('result-text').innerText = `Hello ${userName}, your result is: ${result}`;
-    document.getElementById('result-display').style.display = 'block';
+    document.getElementById('result-text').innerHTML = `Hello ${userName}, your result is: ${result}`;
+    document.getElementById('result-container').style.display = 'block';
 
     // Prepare data to send to the server
     const data = {
