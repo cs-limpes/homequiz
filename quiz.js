@@ -14,17 +14,14 @@ const quickMoveInHomesResult = `
         <img src="images/Generation-Homes-NW-Sem-Custom-Home.jpg" alt="Semi-Custom Homes">
         <h3>Semi-Custom Homes</h3>
         <p>You have a vision, but you also appreciate guidance. While you've seen many floor plans, none seem just right. Whether it's adjusting rooms, choosing finishes, or tweaking designs, you want a say. Generation Homes Northwest offers a plethora of home plans, and our design team is eager to tailor them to your needs. <a href="https://generationhomesnw.com/plans/" target="_new">Explore our plans here</a>.</p>
-        <p>Unsure about this fit? Delve into the other home options below, reach out at 360-355-3363. Your satisfaction is our priority!</p>
 
         <img src="images/Generation-Homes-NW-Custom-Home.PNG" alt="Custom Homes">
         <h3>Custom Homes</h3>
         <p>Your dream home is unique, just like you. Whether you have a precise vision or simply know that standard plans won't do, Generation Homes Northwest is your partner in crafting that dream. With over 50 years of combined experience, we're as passionate about building homes as you are about living in them. <a href="https://generationhomesnw.com/custom-homes/">View our custom projects here</a> and let's embark on this journey together.</p>
-        <p>Questions or second thoughts? Discover the other home styles below or give us a call at 360-355-3363. We're always eager to help!</p>
 
         <img src="images/Generation-Homes-NW-BOYL.PNG" alt="On Your Lot Homes">
         <h3>On Your Lot</h3>
         <p>Own a property in Vancouver, WA, or Clark County, Washington? Whether you're using one of our plans, modifying it, or starting from scratch, Generation Homes Northwest is thrilled to bring your vision to life on your lot. Even if you're still property hunting, our team can guide you in finding and evaluating the perfect spot. <a href="https://generationhomesnw.com/plans/homes-built-on-your-land/" target="_new">Learn more about building on your lot here</a>.</p>
-        <p>Questions or second thoughts? Give us a call at 360-355-3363. We're always eager to help!</p>
     </div>
 `;
 
@@ -38,17 +35,14 @@ const semiCustomHomesResult = `
         <img src="images/Generation-Homes-NW-Custom-Home.PNG" alt="Custom Homes">
         <h3>Custom Homes</h3>
         <p>Your dream home is unique, just like you. Whether you have a precise vision or simply know that standard plans won't do, Generation Homes Northwest is your partner in crafting that dream. With over 50 years of combined experience, we're as passionate about building homes as you are about living in them. <a href="https://generationhomesnw.com/custom-homes/">View our custom projects here</a> and let's embark on this journey together.</p>
-        <p>Questions or second thoughts? Discover the other home styles below or give us a call at 360-355-3363. We're always eager to help!</p>
 
         <img src="images/Generation-Homes-NW-Quick-Move-In-Home.PNG" alt="Quick Move-In Homes">
         <h3>Quick Move-In Homes</h3>
         <p>You value efficiency and trust. You're not overly concerned with the minutiae of home design, focusing instead on other passions or simply enjoying a hassle-free life. Trust Generation Homes Northwest to provide you with a beautiful, ready-to-move-in home. <a href="https://generationhomesnw.com/plans/quick-move-homes/" target="_new">Browse our current selection here</a>.</p>
-        <p>Still have questions or concerns? Explore the other home types below, call us at 360-355-3363. We're here to assist!</p>
 
         <img src="images/Generation-Homes-NW-BOYL.PNG" alt="On Your Lot Homes">
         <h3>On Your Lot</h3>
         <p>Own a property in Vancouver, WA, or Clark County, Washington? Whether you're using one of our plans, modifying it, or starting from scratch, Generation Homes Northwest is thrilled to bring your vision to life on your lot. Even if you're still property hunting, our team can guide you in finding and evaluating the perfect spot. <a href="https://generationhomesnw.com/plans/homes-built-on-your-land/" target="_new">Learn more about building on your lot here</a>.</p>
-        <p>Questions or second thoughts? Give us a call at 360-355-3363. We're always eager to help!</p>
     </div>
 `;
 
@@ -62,17 +56,14 @@ const buildOnYourLotResult = `
         <img src="images/Generation-Homes-NW-Sem-Custom-Home.jpg" alt="Semi-Custom Homes">
         <h3>Semi-Custom Homes</h3>
         <p>You have a vision, but you also appreciate guidance. While you've seen many floor plans, none seem just right. Whether it's adjusting rooms, choosing finishes, or tweaking designs, you want a say. Generation Homes Northwest offers a plethora of home plans, and our design team is eager to tailor them to your needs. <a href="https://generationhomesnw.com/plans/" target="_new">Explore our plans here</a>.</p>
-        <p>Unsure about this fit? Delve into the other home options below, reach out at 360-355-3363. Your satisfaction is our priority!</p>
 
         <img src="images/Generation-Homes-NW-Custom-Home.PNG" alt="Custom Homes">
         <h3>Custom Homes</h3>
         <p>Your dream home is unique, just like you. Whether you have a precise vision or simply know that standard plans won't do, Generation Homes Northwest is your partner in crafting that dream. With over 50 years of combined experience, we're as passionate about building homes as you are about living in them. <a href="https://generationhomesnw.com/custom-homes/">View our custom projects here</a> and let's embark on this journey together.</p>
-        <p>Questions or second thoughts? Discover the other home styles below or give us a call at 360-355-3363. We're always eager to help!</p>
 
         <img src="images/Generation-Homes-NW-Quick-Move-In-Home.PNG" alt="Quick Move-In Homes">
         <h3>Quick Move-In Homes</h3>
         <p>You value efficiency and trust. You're not overly concerned with the minutiae of home design, focusing instead on other passions or simply enjoying a hassle-free life. Trust Generation Homes Northwest to provide you with a beautiful, ready-to-move-in home. <a href="https://generationhomesnw.com/plans/quick-move-homes/" target="_new">Browse our current selection here</a>.</p>
-        <p>Still have questions or concerns? Explore the other home types below, call us at 360-355-3363. We're here to assist!</p>
     </div>
 `;
 
@@ -86,17 +77,14 @@ const customHomesResult = `
         <img src="images/Generation-Homes-NW-BOYL.PNG" alt="On Your Lot Homes">
         <h3>On Your Lot</h3>
         <p>Own a property in Vancouver, WA, or Clark County, Washington? Whether you're using one of our plans, modifying it, or starting from scratch, Generation Homes Northwest is thrilled to bring your vision to life on your lot. Even if you're still property hunting, our team can guide you in finding and evaluating the perfect spot. <a href="https://generationhomesnw.com/plans/homes-built-on-your-land/" target="_new">Learn more about building on your lot here</a>.</p>
-        <p>Questions or second thoughts? Give us a call at 360-355-3363. We're always eager to help!</p>
 
         <img src="images/Generation-Homes-NW-Sem-Custom-Home.jpg" alt="Semi-Custom Homes">
         <h3>Semi-Custom Homes</h3>
         <p>You have a vision, but you also appreciate guidance. While you've seen many floor plans, none seem just right. Whether it's adjusting rooms, choosing finishes, or tweaking designs, you want a say. Generation Homes Northwest offers a plethora of home plans, and our design team is eager to tailor them to your needs. <a href="https://generationhomesnw.com/plans/" target="_new">Explore our plans here</a>.</p>
-        <p>Unsure about this fit? Delve into the other home options below, reach out at 360-355-3363. Your satisfaction is our priority!</p>
 
         <img src="images/Generation-Homes-NW-Quick-Move-In-Home.PNG" alt="Quick Move-In Homes">
         <h3>Quick Move-In Homes</h3>
         <p>You value efficiency and trust. You're not overly concerned with the minutiae of home design, focusing instead on other passions or simply enjoying a hassle-free life. Trust Generation Homes Northwest to provide you with a beautiful, ready-to-move-in home. <a href="https://generationhomesnw.com/plans/quick-move-homes/" target="_new">Browse our current selection here</a>.</p>
-        <p>Still have questions or concerns? Explore the other home types below, call us at 360-355-3363. We're here to assist!</p>
     </div>
 `;
 

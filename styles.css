@@ -7,6 +7,7 @@ body {
       border: 15px solid #71afbe;
       color: #4d5959;
       font-size: 16px;
+      font-family: raleway, sans-serif;
 }
 
 @media screen and (max-width: 600px) {
@@ -98,7 +99,7 @@ h1 {
 }
 
 .result img {
-      width: 50%;
-      margin: 0 25%;
+      width: 80%;
+      margin: 0 10%;
       padding-top: 1rem;
 }
